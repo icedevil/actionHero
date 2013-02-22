@@ -4,9 +4,10 @@
 
 ** General **
 
-- actionHero now uses fakeredis rather than implamenting certain operations locally (cache, tasks)
+- if you choose to run actionHero without redis, a number of features will be disabled.  We will no longer be maintaining a 'with' and 'without' version of:
+  - tasks
+  - cache
 - this allows for a smaller, more unified codebase
-- redis is now always 'enabled', but `fake` can be toggled (boolean)
 
 ## Version 4.3.5
 
